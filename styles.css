@@ -109,6 +109,12 @@ body {
 }
 
 /* Video */
+.fade__body {}
+
+.fade {}
+
+.star-wars {}
+
 .video {}
 
 .video__list {
@@ -120,3 +126,47 @@ body {
 .video__item {}
 
 .video__file {}
+
+/* =================================================== */
+body {
+    width: 100%;
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    top: -25px;
+    z-index: 1;
+}
+
+.star-wars {
+    height: 100%;
+    perspective: 400px;
+}
+
+.crawl {
+    position: relative;
+    top: -100px;
+    transform-origin: 50% 100%;
+    animation: crawl 40s linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(0) translateZ(0);
+    }
+
+    15% {
+        top: -500px;
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
