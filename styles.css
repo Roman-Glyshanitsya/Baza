@@ -157,13 +157,9 @@ body {
 @keyframes crawl {
     0% {
         top: 0;
-        transform: rotateX(0) translateZ(0);
-    }
-
-    15% {
-        top: -500px;
         transform: rotateX(20deg) translateZ(0);
     }
+
 
     100% {
         top: -6000px;
